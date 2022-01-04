@@ -1,0 +1,171 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap");
+
+body {
+  margin: 0;
+  background: linear-gradient(to right, #6fa9f1, #58ba9e);
+  font-family: "Roboto", Arial, sans-serif;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex {
+  display: flex;
+}
+
+.main-container {
+  background-image: url("../assets/green-chameleon-unsplash.jpg");
+  background-size: cover;
+  padding: 2em 0;
+}
+
+.container {
+  width: 85%;
+  margin: 0 auto;
+  background-color: #5d6a76de;
+  border: 1px solid #63a2da;
+  border-radius: 1rem;
+  flex-direction: column;
+}
+
+.about-title {
+  margin: 0;
+  color: #fff;
+}
+
+.about-subtitle {
+  color: #fff;
+  font-size: 1.125rem;
+  font-weight: 500;
+}
+
+.about {
+  padding: 1.5rem;
+  background-color: #58ba9ed0;
+  border-radius: 1rem 1rem 0 0;
+}
+
+.about p {
+  margin-bottom: 0.5rem;
+}
+
+.form-title {
+  color: #fff;
+  font-size: 2rem;
+  text-align: center;
+  margin-top: 0;
+}
+
+.form {
+  backdrop-filter: blur(1rem);
+  margin: 0 auto;
+  padding: 1.5em;
+  box-sizing: border-box;
+}
+
+@supports (backdrop-filter: blur(1.5rem)) {
+  .form {
+    background-color: transparent;
+    backdrop-filter: blur(1.5rem);
+  }
+
+  .container {
+    background-color: transparent;
+    backdrop-filter: blur(1.5rem);
+  }
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  font-size: 1rem;
+  color: #fff;
+}
+
+.input-style {
+  outline: none;
+  border: none;
+  border-bottom: 3px solid aquamarine;
+}
+
+input {
+  line-height: 2rem;
+}
+
+textarea {
+  resize: vertical;
+  line-height: 2rem;
+}
+
+.error {
+  color: #fac02e;
+  margin-top: 0;
+  font-size: 0.85rem;
+}
+
+.error-border {
+  border-bottom: 3px solid #ff7700;
+}
+
+.submit-btn {
+  width: 100%;
+  line-height: 2rem;
+  border: none;
+  font-weight: 700;
+  font-size: large;
+  background-color: #58ba9e;
+}
+
+.copy {
+  color: #fff;
+  margin-left: 1rem;
+  margin-bottom: 0;
+}
+
+.copy a {
+  color: #e0ffff;
+}
+
+@media (min-width: 900px) {
+  .main-container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+  }
+
+  .about {
+    padding: 2rem;
+    width: 80%;
+    border-radius: 1rem 0 0 1rem;
+  }
+
+  .form {
+    width: 90%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    width: 75%;
+  }
+  .about {
+    padding: 3rem 4rem;
+  }
+
+  .form {
+    padding: 3rem;
+  }
+}
